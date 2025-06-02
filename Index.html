@@ -498,15 +498,72 @@
                 </div>
                 
                 <!-- Tool Card 2 -->
-                <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-compress-alt"></i>
-                    </div>
-                    <div class="tool-info">
-                        <h3>Image Compressor</h3>
-                        <p>Reduce image file size without losing quality.</p>
-                        <a href="/tools_/img-compress.html" class="tool-link">Use Tool</a>
-                    </div>
+                <a href="/tools_/image-compressor" class="tool-card">
+  <div class="tool-icon">
+    <i class="fas fa-compress-alt"></i>
+  </div>
+  <div class="tool-info">
+    <h3>Image Compressor</h3>
+    <p>Reduce image file size without losing quality.</p>
+    <div class="tool-link">Use Tool</div>
+  </div>
+</a>
+
+<style>
+.tool-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.tool-icon {
+  padding: 20px;
+  text-align: center;
+  background: #f0f7ff;
+  color: #1976d2;
+  font-size: 24px;
+}
+
+.tool-info {
+  padding: 15px;
+}
+
+.tool-info h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.tool-info p {
+  margin: 0 0 12px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.tool-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #1976d2;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.tool-card:hover .tool-link {
+  background: #1565c0;
+}
+</style>
                 </div>
                 
                 <!-- Tool Card 3 -->
